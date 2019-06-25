@@ -43,7 +43,7 @@ def predict():
      img= img.reshape(1,32,32,3)
      pred = model.predict(img)
      idx = pre_val(pred[0])
-     res = str(classes[idx])
+     res = "The Image is of a "+str(classes[idx])
      return render_template("index.html",output=res)
 
 if __name__ == "__main__":
