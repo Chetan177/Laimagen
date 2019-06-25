@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Laimagen</title>
+    <link rel="stylesheet" href="static/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aldrich">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,400,500">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway+Dots">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Seaweed+Script">
+    <link rel="stylesheet" href="static/assets/css/styles.min.css">
+    <link rel="stylesheet" href="static/assets/css/Pretty-Footer.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-md custom-header">
+        <div class="container-fluid"><a class="navbar-brand" href="#">La |&nbsp;<span>Imagen</span> </a><button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse"></button>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav links">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#overview">Overview </a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#predict">Predict</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#">Dataset</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link custom-navbar" href="#dev">Developer</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="news-block" name="overview">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-lg">
+                    <h1 class="newsblock-title">Overview</h1>
+                    <div class="row" style="/*width: 720px;*/height: 500px;">
+                        <div class="col-3 col-"><img src="static/assets/img/1.png" width="156px"></div>
+                        <div class="col-9 col-sm">
+                            <h1 class="newsblock-title-under">La Imagen Image Classifier</h1>
+                            <p>This is an Image classifier which is based on Deep neural net &nbsp;La imagen uses a convolutional neural network based architechture to claasify image. It is developed in python.</p>
+                            <p>La imagen uses Karas model with a Tensorflow backend.</p>
+                            <p>La imagen predict images with 90% + accuracy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Push-20"></div>
+    <div class="news-block" name="overview">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-lg">
+                    <h1 class="newsblock-title">DataSet</h1>
+                    <div class="row" style="/*width: 720px;*/height: 500px;">
+                        <div class="col-3 col-md"><img src="static/assets/img/img.jpg"></div>
+                        <div class="col-9 col-sm">
+                            <h1 class="newsblock-title-under">CIFAR-10</h1>
+                            <p><br>The CIFAR-10 dataset consists of 60000 32x32 colour images in 10 classes, with 6000 images per class. There are 50000 training images and 10000 test images.&nbsp;<br><br>The dataset is divided into five training batches
+                                and one test batch, each with 10000 images. The test batch contains exactly 1000 randomly-selected images from each class. The training batches contain the remaining images in random order, but some training batches may
+                                contain more images from one class than another. Between them, the training batches contain exactly 5000 images from each class.&nbsp;<br><br>Here are the classes in the dataset, as well as 10 random images from each<br>The
+                                classes are completely mutually exclusive. There is no overlap between automobiles and trucks. "Automobile" includes sedans, SUVs, things of that sort. "Truck" includes only big trucks. Neither includes pickup trucks.<br><br><br></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Push-20"></div>
+    <div class="news-block" name="predict"><a href="#" name="predict"></a>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-lg">
+                    <h1 class="newsblock-title">Predict</h1>
+                    <div class="row" style="/*width: 720px;*//*height: 400px;*/">
+                        <div class="col-9 col-sm">
+                            <h1 class="newsblock-title-under">Select an image</h1>
+                            <p>Upload your image for prediction. Just make sure they belong to the above classes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form action = "http://192.168.0.114:5050/predict" method = "POST" enctype = "multipart/form-data">
+            <div class="row">
+                <div class="col">
+                    <div class="dashed_upload"><div class="wrapper">
+  <div class="drop">
+    <div class="cont">
+      <i class="fa fa-cloud-upload"></i>
+      <div class="tit">
+        Drag & Drop
+      </div>
+      <div class="desc">
+        or
+      </div>
+      <div class="browse">
+        click here to browse
+      </div>
+    </div>
+    <output id="list"></output>
+    <input id="image" type="file" name="img" accept="image/png, image/jpeg"/>
+  </div>
+</div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    </div>
+                </div>
+            </div>
+            <div class="Push-20"></div>
+
+            <div class="Push-20"></div>
+            <div class="row" style="height: 100;">
+                <div class="col-md-12 col-lg-8 offset-lg-2" style="text-align:center"><button class="btn btn-danger" type="submit" id="predict-button" style="border:none;width:151px;height:58px;margin-left:14px;background-color:#b360d9;color:rgb(255,255,255);margin-top:12px;">Predict</button></div>
+            </div>
+          </form>
+            <div class="Push-20"></div>
+            <div class="row">
+                <div class="col">
+                    <div style="text-align:center;">
+                        <h2 style="font-family: Aldrich, sans-serif;font-size: 60px;color: rgb(218,109,47);filter: blur(0px) brightness(99%);opacity: 1;">{{output}}</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="row">
+            <div class="col-sm-6 col-md-4 footer-navigation">
+                <h3><a href="#">La :<span>Imagen</span></a></h3>
+                <p class="company-name"><br>La Imagen Developed by Chetan<br><br></p>
+            </div>
+            <div class="col-sm-6 col-md-4 footer-contacts">
+                <div><span class="fa fa-map-marker footer-contacts-icon"> </span>
+                    <p><span class="new-line-span">KIIT College Of Engineering</span>New Delhi, India</p>
+                </div>
+                <div><i class="fa fa-phone footer-contacts-icon"></i>
+                    <p class="footer-center-info email text-left">+91 9560410787</p>
+                </div>
+                <div><i class="fa fa-envelope footer-contacts-icon"></i>
+                    <p> <a href="#" target="_blank">chetanpandey177@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-md-4 footer-about">
+                <div class="social-links social-icons"><a href="https://www.facebook.com/chetanpandey177"><i class="fa fa-facebook"></i></a><a href="https://twitter.com/chetanpandey177?lang=en"><i class="fa fa-twitter"></i></a><a href="https://github.com/Chetan177/"><i class="fa fa-github"></i></a></div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/1jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+    <script>
+    function readURL(input) {
+  if (input.files && input.files[0]) {
+    var reader = new FileReader();
+
+    reader.onload = function(e) {
+      $('#preview').attr('src', e.target.result);
+    }
+
+    reader.readAsDataURL(input.files[0]);
+  }
+}
+
+$("#img").change(function() {
+  readURL(this);
+});
+    </script>
+</body>
+
+</html>
