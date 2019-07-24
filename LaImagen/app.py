@@ -13,6 +13,7 @@ from load import*
 global model
 classes = ['airplane','automobile','bird','cat','deer','dog','frog','horse','ship','truck']
 app = Flask(__name__)
+
 def pre_val(res):
   x = np.where(res == np.amax(res))
   x=x[0]
@@ -48,4 +49,4 @@ def predict():
 
 if __name__ == "__main__":
     model= init()
-    app.run(host="192.168.0.114",port = 5050)
+    app.run(port = 5050) # app.run(host="0.0.0.0")
