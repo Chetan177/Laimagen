@@ -34,8 +34,8 @@
         </div>
     </nav>
     <div class="Push-20"></div>
-    <div><div class="brand">
-<div class="logo">
+    <div style="margin-right:0%" ><div class="brand">
+<div class="logo" style="margin-right:0%" >
   <svg width="200px" height="200px" >
         <path stroke="#ff004e" stroke-width="0" fill="#ff004e" d="M140.773,59.227C137.316,55.771,130.055,50,100,50
         s-37.317,5.771-40.774,9.227C55.77,62.684,49.999,69.104,50,100c-0.001,30.896,5.77,37.316,9.227,40.773
@@ -55,8 +55,8 @@
 </div>
 </div></div>
     <div class="Push-20"></div>
-    <div id="overview" class="w3-row" style="margin-right:10%">
-        <div class="row" style="margin-left:10%">
+    <div id="overview" class="w3-row" style="">
+        <div class="row" style="margin-left:5%">
             <div class="col w3-third">
                 <div class="row">
                     <div class="col">
@@ -75,23 +75,23 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <p class="info"><br>This is an Image classifier which is based on Deep neural net &nbsp;La imagen uses a convolutional neural network based architechture to claasify image. It is developed in python.La imagen uses Karas model with a Tensorflow
-                            backend. La imagen predict images with 90% + accuracy<br><br></p>
+                        <p class="info"><br>This is an Image classifier which is based on Deep neural net <br>La imagen uses a convolutional neural network based architechture to claasify image.<br> It is developed in python.La imagen uses Karas model with a Tensorflow
+                            backend. <br>La imagen predict images with 90% + accuracy<br><br></p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="Push-20"></div>
-    <div id="dataset" class="w3-row" style="margin-right:10%">
-        <div class="row" style="margin-left:10%">
+    <div id="dataset" class="w3-row" style="">
+        <div class="row" style="margin-left:5%">
             <div class="col w3-third">
                 <div class="row">
                     <div class="col">
                         <h1 class="heading"><br>Dataset<br><br></h1>
                     </div>
                 </div>
-                <div class="row"><img src="static/assets/img/img.jpg" height="400em" width="450em"></div>
+                <div class="row"><img src="static/assets/img/img.jpg" height="200em" width="250em"></div>
             </div>
             <div class="col w3-twothird">
                 <div class="row">
@@ -101,37 +101,37 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <p class="info"><br>The CIFAR-10 dataset consists of 60000 32x32 colour images in 10 classes, with 6000 images per class. There are 50000 training images and 10000 test images.&nbsp;<br><br>The dataset is divided into five training batches and
-                            one test batch, each with 10000 images. The test batch contains exactly 1000 randomly-selected images from each class. The training batches contain the remaining images in random order, but some training batches may contain
-                            more images from one class than another. Between them, the training batches contain exactly 5000 images from each class.&nbsp;<br><br>Here are the classes in the dataset, as well as 10 random images from each<br>The classes
-                            are completely mutually exclusive. There is no overlap between automobiles and trucks. "Automobile" includes sedans, SUVs, things of that sort. "Truck" includes only big trucks. Neither includes pickup trucks.<br><br></p>
+                        <p class="info"><br>The CIFAR-10 dataset consists of 60000 32x32 colour images in 10 classes, with 6000 images per class.<br> There are 50000 training images and 10000 test images.<br><br>The dataset is divided into five training batches and
+                            one test batch, each with 10000 images.<br> The test batch contains exactly 1000 randomly-selected images from each class. <br>The training batches contain the remaining images in random order, but some training batches may contain
+                            more images from one class than another.<br>Between them, the training batches contain exactly 5000 images from each class.<br>Here are the classes in the dataset, as well as 10 random images from each<br>The classes
+                            are completely mutually exclusive.<br> There is no overlap between automobiles and trucks. "Automobile" includes sedans, SUVs, things of that sort. "Truck" includes only big trucks. Neither includes pickup trucks.<br><br></p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="Push-20"></div>
-    <div style="margin-left:10%">
-        <div class="row" id ="predict" style="margin-right:10%">
+    <div style="margin-left:5%">
+        <div class="row" id ="predict" style="">
             <h1 class="heading"><br>Prediction<br><br></h1>
         </div>
-        <div class="row" style="margin-right:10%">
+        <div class="row" style="">
             <p class="info"><br>Upload your image for prediction. Just make sure they belong to the above classes<br><br></p>
         </div>
         <form action = "/predict" method = "POST" enctype = "multipart/form-data">
-        <div class="row w3-center" style="margin-right:5%">
-            <div class="col w3-center">
-                <div class="dashed_upload w3-center"><div class="wrapper">
-  <div class="drop">
-    <div class="cont">
+        <div style="margin-right:0%" class="row w3-center" style="">
+            <div style="margin-right:0%" class="col w3-center">
+                <div style="margin-right:0%" class="dashed_upload w3-center"><div class="wrapper">
+  <div  style="align-content: center;" class="drop">
+    <div style="align-content: center;" class="cont">
       <i class="fa fa-cloud-upload"></i>
-      <div class="tit">
+      <div style="align-content: center;" class="tit">
         Drag & Drop
       </div>
-      <div class="desc">
+      <div style="align-content: center;" class="desc">
         or
       </div>
-      <div class="browse">
+      <div style="align-content: center;" class="browse">
         click here to browse
       </div>
     </div>
@@ -144,12 +144,12 @@
             </div>
         </div>
         <div class="Push-20"></div>
-        <div class="row w3-center" style="margin-right:5%">
+        <div class="row w3-center" style="">
             <div class="col"><button class="btn btn-danger" type="submit" id="predict-button" style="border:none;width:151px;height:58px;margin-left:14px;background-color:#b360d9;color:rgb(255,255,255);margin-top:12px;">Predict</button></div>
         </div>
         </form>
         <div class="row">
-            <div class="col w3-col w3-hover-shadow w3-center" style="margin:10%">
+            <div class="col w3-col w3-hover-shadow w3-center" style="margin:5%">
 <section class="w3-hover-shadow">
                 <h1 class="info" style="text-align : center;font-size:2.5em">&nbsp;{{output}}&nbsp;</h1>
                </section>
@@ -165,8 +165,8 @@
     <div class="Push-20"></div>
     <footer id ="contact">
         <div class="row">
-            <div class="col-sm-6 col-md-4 footer-navigation"><div class="brand">
-<div class="logo">
+            <div class="col-sm-6 col-md-4 footer-navigation" style="margin-right:0%"><div class="brand">
+<div class="logo" style="margin-right:0%">
   <svg width="200px" height="200px" >
         <path stroke="#ff004e" stroke-width="0" fill="#ff004e" d="M140.773,59.227C137.316,55.771,130.055,50,100,50
         s-37.317,5.771-40.774,9.227C55.77,62.684,49.999,69.104,50,100c-0.001,30.896,5.77,37.316,9.227,40.773
