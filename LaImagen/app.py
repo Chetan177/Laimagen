@@ -46,6 +46,10 @@ def predict():
      idx = pre_val(pred[0])
      res = "The Image is of a "+str(classes[idx])
      return render_template("index.html",output=res)
+@app.errorhandler(500)
+def internal_error(error):
+
+    return render_template("index.html",output = "Error occur plz reload to main page ")
 
 if __name__ == "__main__":
     model= init()
